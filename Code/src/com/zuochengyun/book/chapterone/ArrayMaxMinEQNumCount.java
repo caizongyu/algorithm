@@ -2,7 +2,7 @@ package com.zuochengyun.book.chapterone;
 
 import java.util.Deque;
 import java.util.LinkedList;
-/**
+/**本包 利用栈和队列
  * 求最大值和最小值差值在num内的子数组数量
  * 使用两个双端队列，求出最小值，和最大值
  * @author c
