@@ -1,4 +1,8 @@
 package com.zuochengyun.book.chaptertwo.list;
+
+import java.util.Calendar;
+import java.util.Date;
+
 /**
  * 约瑟夫环
  * 输入一个环形单向链表的头结点   和m
@@ -13,7 +17,7 @@ public class JosephRang {
 		return method1(MyListUtils.createRangList(1),1);
 	}
 	/**
-	 * 暴力绕圈报数  删除
+	 * 暴力绕圈报数  删除 时间复杂度O(N*M)
 	 * @param head
 	 * @param m
 	 * @return
@@ -36,12 +40,30 @@ public class JosephRang {
 		}
 		return head;
 	}
-	private static Node method2(Node head, int n) {
-		
-		return null;
+	/**
+	 * 公式方法  n 表示几个节点,结果需要加1 因为从0开始编号
+	 * @param args
+	 */
+	private static int method2(int n,int m) {
+		if(n == 1) {
+			return 0;
+		}else {
+			return (method2(n-1,m)+m)%n;
+		}
 	}
+
 	public static void main(String[] args) {
-		System.out.println(method1(MyListUtils.createRangList(1),1).value);
+		//System.out.println(method1(MyListUtils.createRangList(1),1).value);
+		;
+		Date date=new Date();
+		System.out.println(Calendar.getInstance().getTime());
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println(Calendar.getInstance().getTime());
 	}
 
 }
