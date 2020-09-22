@@ -31,5 +31,7 @@ public class FindNumInMatrix {
     public static void main(String[] args) {
         int[][] arr ={{0,1,2,5},{2,3,4,7},{4,4,4,8},{5,7,7,9}};
         System.out.println(find(arr, 6));
+        float num = 0.123456f;
+        System.out.println((float)Math.round(num*100)/100);
     }
 }
