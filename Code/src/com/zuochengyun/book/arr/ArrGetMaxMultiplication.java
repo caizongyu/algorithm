@@ -1,5 +1,8 @@
 package com.zuochengyun.book.arr;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @ClassName : ArrGetMaxMultiplication
  * @Description : 数组中子数组的最大乘积
@@ -28,7 +31,12 @@ public class ArrGetMaxMultiplication {
     }
 
     public static void main(String[] args) {
-        double[] arr = {-2.5,4,0,3,0.5,8,-1};
+       /* double[] arr = {-2.5,4,0,3,0.5,8,-1};
         System.out.println(getResult(arr));
+        System.out.println(System.currentTimeMillis());*/
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(10,1);
+        System.out.println(map.get(0xA));
+        System.out.println(map);
     }
 }
