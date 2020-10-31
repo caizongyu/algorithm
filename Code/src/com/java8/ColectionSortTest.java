@@ -2,9 +2,7 @@ package com.java8;
 
 import com.zuochengyun.book.chaptertwo.list.MyListUtils;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class ColectionSortTest {
     private static void lambdaStringListSort(){
@@ -16,6 +14,9 @@ public class ColectionSortTest {
     }
 
     public static void main(String[] args) {
-
+        LinkedHashMap<Character,Integer> map = new LinkedHashMap<>();
+        for(Map.Entry entry:map.entrySet()){
+            System.out.println(entry.getValue());
+        }
     }
 }

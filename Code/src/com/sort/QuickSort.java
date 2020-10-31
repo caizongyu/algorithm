@@ -3,7 +3,7 @@ package com.sort;
 import java.util.Arrays;
 
 /*
- * ¿ìËÙÅÅĞò
+ * 
  */
 public class QuickSort {
 	void doSort(int begin, int end, int[] arr){
