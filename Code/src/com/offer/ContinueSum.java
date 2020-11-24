@@ -29,6 +29,8 @@ public class ContinueSum {
     }
 
     public static void main(String[] args) {
-        System.out.println(new ContinueSum().FindContinuousSequence(9));
+        //System.out.println(new ContinueSum().FindContinuousSequence(9));
+        //StringBuilder sb = new StringBuilder();
+        System.out.println('0'-'a');
     }
 }
